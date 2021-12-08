@@ -9,13 +9,17 @@ import SwiftUI
 
 struct HomeHeaderView: View {
     var body: some View {
-        HStack{
-            VStack{
+        HStack(alignment:.center){
+            Image("avatar")
+            Spacer()
+            VStack(alignment: .leading, spacing: -8){
                 Text("Hi, Tzuzul Code")
                     .customFont(.custom(.bold, 24))
                 Text("Welcome to your favorite app")
+                    .customFont(.custom(.demibold, 16))
             }.foregroundColor(.basePrussianBlue)
-        }
+            
+        }.padding(.horizontal,20)
     }
 }
 

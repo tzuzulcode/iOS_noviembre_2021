@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB3389252761093900F9423C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3389242761093900F9423C /* ColorExtension.swift */; };
+		BB3389272761097C00F9423C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3389262761097C00F9423C /* UIColorExtension.swift */; };
+		BB33892927610A2700F9423C /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33892827610A2700F9423C /* IntExtension.swift */; };
 		BB968ECA275E602100831BC0 /* FinancialAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EC9275E602100831BC0 /* FinancialAppApp.swift */; };
 		BB968ECC275E602100831BC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968ECB275E602100831BC0 /* ContentView.swift */; };
 		BB968ECE275E602200831BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB968ECD275E602200831BC0 /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 		BB3389212761045200F9423C /* AvenirNextCondensed-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-UltraLight.ttf"; sourceTree = "<group>"; };
 		BB3389222761045200F9423C /* AvenirNextCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		BB3389232761045200F9423C /* AvenirNextCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		BB3389242761093900F9423C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		BB3389262761097C00F9423C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		BB33892827610A2700F9423C /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		BB968EC6275E602100831BC0 /* FinancialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB968EC9275E602100831BC0 /* FinancialAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialAppApp.swift; sourceTree = "<group>"; };
 		BB968ECB275E602100831BC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				BB968EE1275E659800831BC0 /* _theming */,
+				BB3389242761093900F9423C /* ColorExtension.swift */,
+				BB3389262761097C00F9423C /* UIColorExtension.swift */,
+				BB33892827610A2700F9423C /* IntExtension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -228,8 +237,11 @@
 				BB968EE0275E63E600831BC0 /* HomeHeaderView.swift in Sources */,
 				BB968EE8275E69F200831BC0 /* PalleteColors.swift in Sources */,
 				BB968EE3275E65C100831BC0 /* CustomTextStyle.swift in Sources */,
+				BB3389272761097C00F9423C /* UIColorExtension.swift in Sources */,
 				BB968ECC275E602100831BC0 /* ContentView.swift in Sources */,
+				BB33892927610A2700F9423C /* IntExtension.swift in Sources */,
 				BB968ECA275E602100831BC0 /* FinancialAppApp.swift in Sources */,
+				BB3389252761093900F9423C /* ColorExtension.swift in Sources */,
 				BB968EE6275E662300831BC0 /* ScaledFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
