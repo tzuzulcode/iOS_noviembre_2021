@@ -18,6 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB33891E2761045200F9423C /* AvenirNextCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		BB33891F2761045200F9423C /* AvenirNextCondensed-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-DemiBold.ttf"; sourceTree = "<group>"; };
+		BB3389202761045200F9423C /* AvenirNextCondensed-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Heavy.ttf"; sourceTree = "<group>"; };
+		BB3389212761045200F9423C /* AvenirNextCondensed-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-UltraLight.ttf"; sourceTree = "<group>"; };
+		BB3389222761045200F9423C /* AvenirNextCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		BB3389232761045200F9423C /* AvenirNextCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		BB968EC6275E602100831BC0 /* FinancialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB968EC9275E602100831BC0 /* FinancialAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialAppApp.swift; sourceTree = "<group>"; };
 		BB968ECB275E602100831BC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,11 +134,25 @@
 		BB968EE1275E659800831BC0 /* _theming */ = {
 			isa = PBXGroup;
 			children = (
+				BB968EE9275E6C0900831BC0 /* Font */,
 				BB968EE2275E65C100831BC0 /* CustomTextStyle.swift */,
 				BB968EE5275E662300831BC0 /* ScaledFont.swift */,
 				BB968EE7275E69F200831BC0 /* PalleteColors.swift */,
 			);
 			path = _theming;
+			sourceTree = "<group>";
+		};
+		BB968EE9275E6C0900831BC0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BB3389222761045200F9423C /* AvenirNextCondensed-Bold.ttf */,
+				BB33891F2761045200F9423C /* AvenirNextCondensed-DemiBold.ttf */,
+				BB3389202761045200F9423C /* AvenirNextCondensed-Heavy.ttf */,
+				BB33891E2761045200F9423C /* AvenirNextCondensed-Medium.ttf */,
+				BB3389232761045200F9423C /* AvenirNextCondensed-Regular.ttf */,
+				BB3389212761045200F9423C /* AvenirNextCondensed-UltraLight.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
