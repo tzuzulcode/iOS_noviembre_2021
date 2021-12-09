@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB07DBF52762562600BFA861 /* SubMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07DBF42762562600BFA861 /* SubMenuView.swift */; };
+		BB07DBF727625A1100BFA861 /* AccountSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07DBF627625A1100BFA861 /* AccountSummaryView.swift */; };
 		BB3389252761093900F9423C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3389242761093900F9423C /* ColorExtension.swift */; };
 		BB3389272761097C00F9423C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3389262761097C00F9423C /* UIColorExtension.swift */; };
 		BB33892927610A2700F9423C /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33892827610A2700F9423C /* IntExtension.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB07DBF42762562600BFA861 /* SubMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuView.swift; sourceTree = "<group>"; };
+		BB07DBF627625A1100BFA861 /* AccountSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryView.swift; sourceTree = "<group>"; };
 		BB33891E2761045200F9423C /* AvenirNextCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Medium.ttf"; sourceTree = "<group>"; };
 		BB33891F2761045200F9423C /* AvenirNextCondensed-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-DemiBold.ttf"; sourceTree = "<group>"; };
 		BB3389202761045200F9423C /* AvenirNextCondensed-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Heavy.ttf"; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 			children = (
 				BB968EDF275E63E600831BC0 /* HomeHeaderView.swift */,
 				BB33892A27610D4B00F9423C /* CardView.swift */,
+				BB07DBF42762562600BFA861 /* SubMenuView.swift */,
+				BB07DBF627625A1100BFA861 /* AccountSummaryView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -238,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB968EE0275E63E600831BC0 /* HomeHeaderView.swift in Sources */,
+				BB07DBF727625A1100BFA861 /* AccountSummaryView.swift in Sources */,
+				BB07DBF52762562600BFA861 /* SubMenuView.swift in Sources */,
 				BB968EE8275E69F200831BC0 /* PalleteColors.swift in Sources */,
 				BB968EE3275E65C100831BC0 /* CustomTextStyle.swift in Sources */,
 				BB3389272761097C00F9423C /* UIColorExtension.swift in Sources */,
