@@ -22,7 +22,7 @@ struct CardView: View {
             VStack{
                 HStack{
                     Image("checkmark")
-                    VStack{
+                    VStack(alignment: .leading, spacing: -6){
                         Text("$99,999")
                             .customFont(.custom(.bold, 20))
                         Text("Available balance")
@@ -31,7 +31,7 @@ struct CardView: View {
                     }.foregroundColor(.white)
                     Spacer()
                     Image("visa-logo")
-                }
+                }.padding(.horizontal,20)
                 HStack { // Step 1
 
                     HStack { // Step 2
@@ -51,50 +51,53 @@ struct CardView: View {
                     Spacer() // Step 3
 
                 }.padding(.top, 15)
+                    .padding(.horizontal,20)
 
                 Spacer() // Step 4
                 HStack { // Step 1
 
-                VStack(alignment: .leading) { // Step 2
+                    VStack(alignment: .leading) { // Step 2
 
-                        Text("CARD HOLDER")
+                            Text("CARD HOLDER")
 
-                            .customFont(.custom(.bold, 11))
+                                .customFont(.custom(.bold, 11))
 
-                            .foregroundColor(Color.baseRockBlue)
+                                .foregroundColor(Color.baseRockBlue)
 
-                        Text("Tzuzul Code").customFont(.custom(.black, 16))
+                            Text("Tzuzul Code").customFont(.custom(.black, 16))
 
-                    }
+                        }
 
-                    Spacer() // Step 3
+                        Spacer() // Step 3
 
-                    VStack(alignment: .leading) { // Step 4
+                        VStack(alignment: .leading) { // Step 4
 
-                        Text("EXPIRES")
+                            Text("EXPIRES")
 
-                            .customFont(.custom(.bold, 11))
+                                .customFont(.custom(.bold, 11))
 
-                            .foregroundColor(Color.baseRockBlue)
+                                .foregroundColor(Color.baseRockBlue)
 
-                        Text("08/22").customFont(.custom(.black, 16))
+                            Text("08/22").customFont(.custom(.black, 16))
 
-                    }
+                        }
 
-                    VStack(alignment: .leading) { // Step 5
+                        VStack(alignment: .leading) { // Step 5
 
-                        Text("CVV")
+                            Text("CVV")
 
-                            .customFont(.custom(.bold, 11))
+                                .customFont(.custom(.bold, 11))
 
-                            .foregroundColor(Color.baseRockBlue)
+                                .foregroundColor(Color.baseRockBlue)
 
-                        Text("999").customFont(.custom(.black, 16))
+                            Text("999").customFont(.custom(.black, 16))
 
-                    }
+                        }
 
-                }
-            }.padding(10)
+                }.padding(.horizontal,20)
+            }.frame(height:160)
+                .frame(width: 300, alignment: .center)
+                
                 .foregroundColor(.baseWhite)
         }
     }

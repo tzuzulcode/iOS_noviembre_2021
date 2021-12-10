@@ -13,6 +13,9 @@
 		BB3389272761097C00F9423C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3389262761097C00F9423C /* UIColorExtension.swift */; };
 		BB33892927610A2700F9423C /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33892827610A2700F9423C /* IntExtension.swift */; };
 		BB33892B27610D4B00F9423C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33892A27610D4B00F9423C /* CardView.swift */; };
+		BB5284A02763A9EE005D1C12 /* TransactionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52849F2763A9EE005D1C12 /* TransactionItemView.swift */; };
+		BB5284A22763AA8A005D1C12 /* RoundedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */; };
+		BB5284A42763AEEB005D1C12 /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */; };
 		BB968ECA275E602100831BC0 /* FinancialAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EC9275E602100831BC0 /* FinancialAppApp.swift */; };
 		BB968ECC275E602100831BC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968ECB275E602100831BC0 /* ContentView.swift */; };
 		BB968ECE275E602200831BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB968ECD275E602200831BC0 /* Assets.xcassets */; };
@@ -36,6 +39,9 @@
 		BB3389262761097C00F9423C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BB33892827610A2700F9423C /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		BB33892A27610D4B00F9423C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BB52849F2763A9EE005D1C12 /* TransactionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemView.swift; sourceTree = "<group>"; };
+		BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBackgroundView.swift; sourceTree = "<group>"; };
+		BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
 		BB968EC6275E602100831BC0 /* FinancialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB968EC9275E602100831BC0 /* FinancialAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialAppApp.swift; sourceTree = "<group>"; };
 		BB968ECB275E602100831BC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB52849E2763A9D4005D1C12 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				BB52849F2763A9EE005D1C12 /* TransactionItemView.swift */,
+				BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
 		BB968EBD275E602100831BC0 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +116,7 @@
 			children = (
 				BB968ECB275E602100831BC0 /* ContentView.swift */,
 				BB968EC9275E602100831BC0 /* FinancialAppApp.swift */,
+				BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +131,7 @@
 		BB968EDA275E621900831BC0 /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB52849E2763A9D4005D1C12 /* Misc */,
 				BB968EDE275E63C200831BC0 /* Home */,
 			);
 			path = "Supporting Views";
@@ -245,15 +262,18 @@
 			files = (
 				BB968EE0275E63E600831BC0 /* HomeHeaderView.swift in Sources */,
 				BB07DBF727625A1100BFA861 /* AccountSummaryView.swift in Sources */,
+				BB5284A22763AA8A005D1C12 /* RoundedBackgroundView.swift in Sources */,
 				BB07DBF52762562600BFA861 /* SubMenuView.swift in Sources */,
 				BB968EE8275E69F200831BC0 /* PalleteColors.swift in Sources */,
 				BB968EE3275E65C100831BC0 /* CustomTextStyle.swift in Sources */,
 				BB3389272761097C00F9423C /* UIColorExtension.swift in Sources */,
 				BB33892B27610D4B00F9423C /* CardView.swift in Sources */,
 				BB968ECC275E602100831BC0 /* ContentView.swift in Sources */,
+				BB5284A42763AEEB005D1C12 /* AccountHomeView.swift in Sources */,
 				BB33892927610A2700F9423C /* IntExtension.swift in Sources */,
 				BB968ECA275E602100831BC0 /* FinancialAppApp.swift in Sources */,
 				BB3389252761093900F9423C /* ColorExtension.swift in Sources */,
+				BB5284A02763A9EE005D1C12 /* TransactionItemView.swift in Sources */,
 				BB968EE6275E662300831BC0 /* ScaledFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
