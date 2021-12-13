@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		BB07DBF52762562600BFA861 /* SubMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07DBF42762562600BFA861 /* SubMenuView.swift */; };
 		BB07DBF727625A1100BFA861 /* AccountSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07DBF627625A1100BFA861 /* AccountSummaryView.swift */; };
+		BB090D1A27679AEB0053D2CA /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB090D1927679AEB0053D2CA /* CreateAccountView.swift */; };
+		BB090D1D27679C2C0053D2CA /* AccountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB090D1C27679C2C0053D2CA /* AccountTypeView.swift */; };
+		BB090D1F27679EB30053D2CA /* AccountFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB090D1E27679EB30053D2CA /* AccountFormView.swift */; };
+		BB090D212767A0810053D2CA /* FirstNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB090D202767A0810053D2CA /* FirstNameView.swift */; };
+		BB090D232767A1D60053D2CA /* LastNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB090D222767A1D60053D2CA /* LastNameView.swift */; };
+		BB090D252767A2050053D2CA /* CardLimitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB090D242767A2050053D2CA /* CardLimitView.swift */; };
+		BB090D272767A3580053D2CA /* CreditCardTypeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB090D262767A3570053D2CA /* CreditCardTypeMenuView.swift */; };
+		BB090D2A2767A61A0053D2CA /* CreditCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB090D292767A61A0053D2CA /* CreditCardStyle.swift */; };
 		BB3389252761093900F9423C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3389242761093900F9423C /* ColorExtension.swift */; };
 		BB3389272761097C00F9423C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3389262761097C00F9423C /* UIColorExtension.swift */; };
 		BB33892927610A2700F9423C /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33892827610A2700F9423C /* IntExtension.swift */; };
@@ -29,6 +37,14 @@
 /* Begin PBXFileReference section */
 		BB07DBF42762562600BFA861 /* SubMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuView.swift; sourceTree = "<group>"; };
 		BB07DBF627625A1100BFA861 /* AccountSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryView.swift; sourceTree = "<group>"; };
+		BB090D1927679AEB0053D2CA /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		BB090D1C27679C2C0053D2CA /* AccountTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTypeView.swift; sourceTree = "<group>"; };
+		BB090D1E27679EB30053D2CA /* AccountFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFormView.swift; sourceTree = "<group>"; };
+		BB090D202767A0810053D2CA /* FirstNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNameView.swift; sourceTree = "<group>"; };
+		BB090D222767A1D60053D2CA /* LastNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastNameView.swift; sourceTree = "<group>"; };
+		BB090D242767A2050053D2CA /* CardLimitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLimitView.swift; sourceTree = "<group>"; };
+		BB090D262767A3570053D2CA /* CreditCardTypeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTypeMenuView.swift; sourceTree = "<group>"; };
+		BB090D292767A61A0053D2CA /* CreditCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardStyle.swift; sourceTree = "<group>"; };
 		BB33891E2761045200F9423C /* AvenirNextCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Medium.ttf"; sourceTree = "<group>"; };
 		BB33891F2761045200F9423C /* AvenirNextCondensed-DemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-DemiBold.ttf"; sourceTree = "<group>"; };
 		BB3389202761045200F9423C /* AvenirNextCondensed-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextCondensed-Heavy.ttf"; sourceTree = "<group>"; };
@@ -64,6 +80,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB090D1B27679BCA0053D2CA /* Create Account */ = {
+			isa = PBXGroup;
+			children = (
+				BB090D1C27679C2C0053D2CA /* AccountTypeView.swift */,
+				BB090D1E27679EB30053D2CA /* AccountFormView.swift */,
+				BB090D202767A0810053D2CA /* FirstNameView.swift */,
+				BB090D222767A1D60053D2CA /* LastNameView.swift */,
+				BB090D242767A2050053D2CA /* CardLimitView.swift */,
+				BB090D262767A3570053D2CA /* CreditCardTypeMenuView.swift */,
+			);
+			path = "Create Account";
+			sourceTree = "<group>";
+		};
+		BB090D282767A5E10053D2CA /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				BB090D292767A61A0053D2CA /* CreditCardStyle.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		BB52849E2763A9D4005D1C12 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +129,7 @@
 		BB968EC8275E602100831BC0 /* FinancialApp */ = {
 			isa = PBXGroup;
 			children = (
+				BB090D282767A5E10053D2CA /* Modifiers */,
 				BB968EDD275E627D00831BC0 /* Utilities */,
 				BB968EDB275E625B00831BC0 /* Model */,
 				BB968EDA275E621900831BC0 /* Supporting Views */,
@@ -117,6 +155,7 @@
 				BB968ECB275E602100831BC0 /* ContentView.swift */,
 				BB968EC9275E602100831BC0 /* FinancialAppApp.swift */,
 				BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */,
+				BB090D1927679AEB0053D2CA /* CreateAccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,6 +170,7 @@
 		BB968EDA275E621900831BC0 /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB090D1B27679BCA0053D2CA /* Create Account */,
 				BB52849E2763A9D4005D1C12 /* Misc */,
 				BB968EDE275E63C200831BC0 /* Home */,
 			);
@@ -265,16 +305,24 @@
 				BB5284A22763AA8A005D1C12 /* RoundedBackgroundView.swift in Sources */,
 				BB07DBF52762562600BFA861 /* SubMenuView.swift in Sources */,
 				BB968EE8275E69F200831BC0 /* PalleteColors.swift in Sources */,
+				BB090D1D27679C2C0053D2CA /* AccountTypeView.swift in Sources */,
+				BB090D212767A0810053D2CA /* FirstNameView.swift in Sources */,
 				BB968EE3275E65C100831BC0 /* CustomTextStyle.swift in Sources */,
 				BB3389272761097C00F9423C /* UIColorExtension.swift in Sources */,
 				BB33892B27610D4B00F9423C /* CardView.swift in Sources */,
 				BB968ECC275E602100831BC0 /* ContentView.swift in Sources */,
 				BB5284A42763AEEB005D1C12 /* AccountHomeView.swift in Sources */,
 				BB33892927610A2700F9423C /* IntExtension.swift in Sources */,
+				BB090D232767A1D60053D2CA /* LastNameView.swift in Sources */,
 				BB968ECA275E602100831BC0 /* FinancialAppApp.swift in Sources */,
 				BB3389252761093900F9423C /* ColorExtension.swift in Sources */,
+				BB090D272767A3580053D2CA /* CreditCardTypeMenuView.swift in Sources */,
 				BB5284A02763A9EE005D1C12 /* TransactionItemView.swift in Sources */,
+				BB090D1A27679AEB0053D2CA /* CreateAccountView.swift in Sources */,
+				BB090D1F27679EB30053D2CA /* AccountFormView.swift in Sources */,
 				BB968EE6275E662300831BC0 /* ScaledFont.swift in Sources */,
+				BB090D252767A2050053D2CA /* CardLimitView.swift in Sources */,
+				BB090D2A2767A61A0053D2CA /* CreditCardStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
