@@ -16,6 +16,8 @@ struct CreateAccountView: View {
                 header
                 ScrollView{
                     main
+                    
+                    //Reto: Investigar sobre core data
                 }
             }
         }
@@ -84,9 +86,9 @@ private extension CreateAccountView {
                 accountSelector
                 AccountFormView()
                 VStack {
-                    //CreditCardTypeMenuView()
+                    CreditCardTypeMenuView()
                     CardView().padding(.vertical, 20)
-                    //ColorButtonMenu()
+                    ColorButtonMenuView()
                     Spacer()
                 }.padding(.top, 0)
                 

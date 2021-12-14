@@ -24,6 +24,7 @@
 		BB5284A02763A9EE005D1C12 /* TransactionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52849F2763A9EE005D1C12 /* TransactionItemView.swift */; };
 		BB5284A22763AA8A005D1C12 /* RoundedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */; };
 		BB5284A42763AEEB005D1C12 /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */; };
+		BB866CDC2768EE090017F27C /* ColorButtonMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB866CDB2768EE090017F27C /* ColorButtonMenuView.swift */; };
 		BB968ECA275E602100831BC0 /* FinancialAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EC9275E602100831BC0 /* FinancialAppApp.swift */; };
 		BB968ECC275E602100831BC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968ECB275E602100831BC0 /* ContentView.swift */; };
 		BB968ECE275E602200831BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB968ECD275E602200831BC0 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		BB52849F2763A9EE005D1C12 /* TransactionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemView.swift; sourceTree = "<group>"; };
 		BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBackgroundView.swift; sourceTree = "<group>"; };
 		BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
+		BB866CDB2768EE090017F27C /* ColorButtonMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButtonMenuView.swift; sourceTree = "<group>"; };
 		BB968EC6275E602100831BC0 /* FinancialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB968EC9275E602100831BC0 /* FinancialAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialAppApp.swift; sourceTree = "<group>"; };
 		BB968ECB275E602100831BC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				BB090D222767A1D60053D2CA /* LastNameView.swift */,
 				BB090D242767A2050053D2CA /* CardLimitView.swift */,
 				BB090D262767A3570053D2CA /* CreditCardTypeMenuView.swift */,
+				BB866CDB2768EE090017F27C /* ColorButtonMenuView.swift */,
 			);
 			path = "Create Account";
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				BB968EE8275E69F200831BC0 /* PalleteColors.swift in Sources */,
 				BB090D1D27679C2C0053D2CA /* AccountTypeView.swift in Sources */,
 				BB090D212767A0810053D2CA /* FirstNameView.swift in Sources */,
+				BB866CDC2768EE090017F27C /* ColorButtonMenuView.swift in Sources */,
 				BB968EE3275E65C100831BC0 /* CustomTextStyle.swift in Sources */,
 				BB3389272761097C00F9423C /* UIColorExtension.swift in Sources */,
 				BB33892B27610D4B00F9423C /* CardView.swift in Sources */,
