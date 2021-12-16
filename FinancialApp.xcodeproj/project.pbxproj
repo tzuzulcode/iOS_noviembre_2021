@@ -21,6 +21,8 @@
 		BB3389272761097C00F9423C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3389262761097C00F9423C /* UIColorExtension.swift */; };
 		BB33892927610A2700F9423C /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33892827610A2700F9423C /* IntExtension.swift */; };
 		BB33892B27610D4B00F9423C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33892A27610D4B00F9423C /* CardView.swift */; };
+		BB474A76276A4038000D2A20 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB474A74276A4038000D2A20 /* Model.xcdatamodeld */; };
+		BB474A78276A470E000D2A20 /* Account+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB474A77276A470E000D2A20 /* Account+Extension.swift */; };
 		BB5284A02763A9EE005D1C12 /* TransactionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52849F2763A9EE005D1C12 /* TransactionItemView.swift */; };
 		BB5284A22763AA8A005D1C12 /* RoundedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */; };
 		BB5284A42763AEEB005D1C12 /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */; };
@@ -33,6 +35,8 @@
 		BB968EE3275E65C100831BC0 /* CustomTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EE2275E65C100831BC0 /* CustomTextStyle.swift */; };
 		BB968EE6275E662300831BC0 /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EE5275E662300831BC0 /* ScaledFont.swift */; };
 		BB968EE8275E69F200831BC0 /* PalleteColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EE7275E69F200831BC0 /* PalleteColors.swift */; };
+		BBC82181276B914500C4657E /* Card+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC82180276B914500C4657E /* Card+Extension.swift */; };
+		BBC82183276B92C100C4657E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC82182276B92C100C4657E /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,8 @@
 		BB3389262761097C00F9423C /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BB33892827610A2700F9423C /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		BB33892A27610D4B00F9423C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BB474A75276A4038000D2A20 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BB474A77276A470E000D2A20 /* Account+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+Extension.swift"; sourceTree = "<group>"; };
 		BB52849F2763A9EE005D1C12 /* TransactionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemView.swift; sourceTree = "<group>"; };
 		BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBackgroundView.swift; sourceTree = "<group>"; };
 		BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 		BB968EE2275E65C100831BC0 /* CustomTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextStyle.swift; sourceTree = "<group>"; };
 		BB968EE5275E662300831BC0 /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 		BB968EE7275E69F200831BC0 /* PalleteColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalleteColors.swift; sourceTree = "<group>"; };
+		BBC82180276B914500C4657E /* Card+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+Extension.swift"; sourceTree = "<group>"; };
+		BBC82182276B92C100C4657E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +191,10 @@
 		BB968EDB275E625B00831BC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BB474A74276A4038000D2A20 /* Model.xcdatamodeld */,
+				BB474A77276A470E000D2A20 /* Account+Extension.swift */,
+				BBC82180276B914500C4657E /* Card+Extension.swift */,
+				BBC82182276B92C100C4657E /* CoreDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +317,7 @@
 			files = (
 				BB968EE0275E63E600831BC0 /* HomeHeaderView.swift in Sources */,
 				BB07DBF727625A1100BFA861 /* AccountSummaryView.swift in Sources */,
+				BBC82181276B914500C4657E /* Card+Extension.swift in Sources */,
 				BB5284A22763AA8A005D1C12 /* RoundedBackgroundView.swift in Sources */,
 				BB07DBF52762562600BFA861 /* SubMenuView.swift in Sources */,
 				BB968EE8275E69F200831BC0 /* PalleteColors.swift in Sources */,
@@ -316,6 +329,7 @@
 				BB33892B27610D4B00F9423C /* CardView.swift in Sources */,
 				BB968ECC275E602100831BC0 /* ContentView.swift in Sources */,
 				BB5284A42763AEEB005D1C12 /* AccountHomeView.swift in Sources */,
+				BB474A78276A470E000D2A20 /* Account+Extension.swift in Sources */,
 				BB33892927610A2700F9423C /* IntExtension.swift in Sources */,
 				BB090D232767A1D60053D2CA /* LastNameView.swift in Sources */,
 				BB968ECA275E602100831BC0 /* FinancialAppApp.swift in Sources */,
@@ -325,7 +339,9 @@
 				BB090D1A27679AEB0053D2CA /* CreateAccountView.swift in Sources */,
 				BB090D1F27679EB30053D2CA /* AccountFormView.swift in Sources */,
 				BB968EE6275E662300831BC0 /* ScaledFont.swift in Sources */,
+				BB474A76276A4038000D2A20 /* Model.xcdatamodeld in Sources */,
 				BB090D252767A2050053D2CA /* CardLimitView.swift in Sources */,
+				BBC82183276B92C100C4657E /* CoreDataManager.swift in Sources */,
 				BB090D2A2767A61A0053D2CA /* CreditCardStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +545,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB474A74276A4038000D2A20 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB474A75276A4038000D2A20 /* Model.xcdatamodel */,
+			);
+			currentVersion = BB474A75276A4038000D2A20 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BB968EBE275E602100831BC0 /* Project object */;
 }
