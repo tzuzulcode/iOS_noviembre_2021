@@ -26,6 +26,7 @@
 		BB5284A02763A9EE005D1C12 /* TransactionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52849F2763A9EE005D1C12 /* TransactionItemView.swift */; };
 		BB5284A22763AA8A005D1C12 /* RoundedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */; };
 		BB5284A42763AEEB005D1C12 /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */; };
+		BB6ADD67276CE20800EF90AA /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6ADD66276CE20800EF90AA /* CreateAccountViewModel.swift */; };
 		BB866CDC2768EE090017F27C /* ColorButtonMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB866CDB2768EE090017F27C /* ColorButtonMenuView.swift */; };
 		BB968ECA275E602100831BC0 /* FinancialAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EC9275E602100831BC0 /* FinancialAppApp.swift */; };
 		BB968ECC275E602100831BC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968ECB275E602100831BC0 /* ContentView.swift */; };
@@ -65,6 +66,7 @@
 		BB52849F2763A9EE005D1C12 /* TransactionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemView.swift; sourceTree = "<group>"; };
 		BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBackgroundView.swift; sourceTree = "<group>"; };
 		BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
+		BB6ADD66276CE20800EF90AA /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
 		BB866CDB2768EE090017F27C /* ColorButtonMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButtonMenuView.swift; sourceTree = "<group>"; };
 		BB968EC6275E602100831BC0 /* FinancialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB968EC9275E602100831BC0 /* FinancialAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialAppApp.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		BB968ED9275E61CC00831BC0 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				BB6ADD66276CE20800EF90AA /* CreateAccountViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				BB090D272767A3580053D2CA /* CreditCardTypeMenuView.swift in Sources */,
 				BB5284A02763A9EE005D1C12 /* TransactionItemView.swift in Sources */,
 				BB090D1A27679AEB0053D2CA /* CreateAccountView.swift in Sources */,
+				BB6ADD67276CE20800EF90AA /* CreateAccountViewModel.swift in Sources */,
 				BB090D1F27679EB30053D2CA /* AccountFormView.swift in Sources */,
 				BB968EE6275E662300831BC0 /* ScaledFont.swift in Sources */,
 				BB474A76276A4038000D2A20 /* Model.xcdatamodeld in Sources */,
