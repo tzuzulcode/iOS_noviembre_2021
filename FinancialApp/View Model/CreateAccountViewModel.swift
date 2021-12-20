@@ -56,6 +56,54 @@ class CreateAccountViewModel:ObservableObject{
                               .purple,
                               .gray]
     
+    //Methodos
+    func createAccount(){
+        let currentAccount = Account(context: CoreDataManager.shared.context)
+        CoreDataManager.shared.context.perform {
+            let accountNo = UUID().uuidString.suffix(6)
+            //UUID: 123e4567-e89b-12d3-a456-426652340000
+            let currentCard = Card(context: CoreDataManager.shared.context)
+            
+            currentCard.expirationDate = self.expDate
+            
+            currentCard.number = self.ccNumber
+            
+            currentCard.cvv = self.cvv
+
+            currentCard.id = String(accountNo)
+
+            currentCard.dateCreated = Date()
+
+            currentCard.color = self.selectedCardColor.hexString
+
+            currentCard.logo = self.cardLogos[self.selectedCardType]
+            
+            if self.accountTypes[self.selectedAccountType] == AccountType.creditcard.rawValue { // (1)
+
+                currentAccount.balance = self.creditLimit// (2)
+
+            } else {
+
+                currentAccount.balance = Float(self.createRandomBalance())  // (3)
+
+            }
+            
+            currentAccount.acctNumber = String(accountNo)
+
+            currentAccount.firstName = self.firstName
+
+            currentAccount.lastName = self.lastName
+
+            currentAccount.dateCreated = Date()
+
+            currentAccount.type = self.accountTypes[self.selectedAccountType]
+
+            currentAccount.card = currentCard // (4)
+            
+            CoreDataManager.shared.save()
+        }
+        
+    }
     
     
 }
@@ -97,6 +145,10 @@ extension CreateAccountViewModel{
         
         return currentDate
         
+    }
+    
+    func createRandomBalance()->Float{
+        return 0.0
     }
     
     
