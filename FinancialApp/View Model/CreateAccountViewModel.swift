@@ -105,6 +105,26 @@ class CreateAccountViewModel:ObservableObject{
         
     }
     
+    func hasAccounts()->Bool{
+        let request : NSFetchRequest<Account> = Account.fetchRequest()
+        var accounts: [Account] = []
+        
+        do{
+            for data in try CoreDataManager.shared.context.fetch(request){
+                accounts.append(data)
+            }
+            if(accounts.count>0){return true}
+            return false
+        }catch let error as NSError{
+            if error.code == 0,error.domain == "Foundation._GenericObjCError"{
+                print("Invalid error from objective c")
+            }else{
+                fatalError("Unresolved error \(error),\(error.userInfo)")
+            }
+            return false
+        }
+    }
+    
     
 }
 

@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var model : CreateAccountViewModel
     var body: some View {
-        CreateAccountView()
+        ZStack{
+            CreateAccountView()
+            
+            if model.hasAccounts(){
+                AccountHomeView()
+            }
+        }
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(CreateAccountViewModel())
     }
 }

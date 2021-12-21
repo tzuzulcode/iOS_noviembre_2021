@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct CreateAccountView: View {
+    
+    @Environment(\.presentationMode) var presentationMode:Binding<PresentationMode>
+    @EnvironmentObject var model: CreateAccountViewModel
+    
     var body: some View {
         ZStack{
             Color(.baseWhite)
@@ -20,13 +24,20 @@ struct CreateAccountView: View {
                     //Reto: Investigar sobre core data
                 }
             }
+        }.onAppear{
+            self.model.initAccount()
         }
+    }
+    
+    func onCreateTapped(){
+        model.createAccount()
     }
 }
 
 struct CreateAccountView_Previews: PreviewProvider {
     static var previews: some View {
         CreateAccountView()
+            .environmentObject(CreateAccountViewModel())
     }
 }
 
@@ -44,7 +55,10 @@ private extension CreateAccountView {
     }
     
     var createAccountBtn: some View {
-        Button(action: { }) {
+        Button(action: {
+            self.onCreateTapped()
+            self.presentationMode.wrappedValue.dismiss()
+        }) {
             ZStack {
                 Text("CREATE ACCOUNT")
                     .customFont(.custom(.bold, 22))
@@ -85,6 +99,7 @@ private extension CreateAccountView {
             VStack {
                 accountSelector
                 AccountFormView()
+                    .frame(height: self.model.selectedAccountType==1 ? 182 : 120)
                 VStack {
                     CreditCardTypeMenuView()
                     CardView().padding(.vertical, 20)

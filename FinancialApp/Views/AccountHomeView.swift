@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AccountHomeView: View {
+    @ObservedObject var account:Account
     var body: some View {
         ZStack{
             Color(.baseLightWhite)
@@ -20,7 +21,7 @@ struct AccountHomeView: View {
                     SubMenuView()
                     Divider()
                     AccountSummaryView()
-                                    }
+                }
             }
         }
     }
@@ -28,6 +29,7 @@ struct AccountHomeView: View {
 
 struct AccountHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountHomeView()
+        //Crear un mock
+        AccountHomeView(account:)
     }
 }
