@@ -27,6 +27,8 @@
 		BB5284A22763AA8A005D1C12 /* RoundedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */; };
 		BB5284A42763AEEB005D1C12 /* AccountHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */; };
 		BB6ADD67276CE20800EF90AA /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6ADD66276CE20800EF90AA /* CreateAccountViewModel.swift */; };
+		BB7CCB8827834EF0009FADEB /* BoolOptional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7CCB8727834EF0009FADEB /* BoolOptional+Extension.swift */; };
+		BB7CCB8A2783504C009FADEB /* StringOptional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7CCB892783504C009FADEB /* StringOptional+Extension.swift */; };
 		BB866CDC2768EE090017F27C /* ColorButtonMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB866CDB2768EE090017F27C /* ColorButtonMenuView.swift */; };
 		BB968ECA275E602100831BC0 /* FinancialAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EC9275E602100831BC0 /* FinancialAppApp.swift */; };
 		BB968ECC275E602100831BC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968ECB275E602100831BC0 /* ContentView.swift */; };
@@ -36,6 +38,9 @@
 		BB968EE3275E65C100831BC0 /* CustomTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EE2275E65C100831BC0 /* CustomTextStyle.swift */; };
 		BB968EE6275E662300831BC0 /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EE5275E662300831BC0 /* ScaledFont.swift */; };
 		BB968EE8275E69F200831BC0 /* PalleteColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB968EE7275E69F200831BC0 /* PalleteColors.swift */; };
+		BBAB43EB2774CB24009EE4B5 /* MockAccountPreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAB43EA2774CB24009EE4B5 /* MockAccountPreviewService.swift */; };
+		BBAB43ED2774CE3C009EE4B5 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAB43EC2774CE3C009EE4B5 /* AccountListView.swift */; };
+		BBAB43EF2774D095009EE4B5 /* CardListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAB43EE2774D095009EE4B5 /* CardListRow.swift */; };
 		BBC82181276B914500C4657E /* Card+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC82180276B914500C4657E /* Card+Extension.swift */; };
 		BBC82183276B92C100C4657E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC82182276B92C100C4657E /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +72,8 @@
 		BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBackgroundView.swift; sourceTree = "<group>"; };
 		BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHomeView.swift; sourceTree = "<group>"; };
 		BB6ADD66276CE20800EF90AA /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		BB7CCB8727834EF0009FADEB /* BoolOptional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BoolOptional+Extension.swift"; sourceTree = "<group>"; };
+		BB7CCB892783504C009FADEB /* StringOptional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringOptional+Extension.swift"; sourceTree = "<group>"; };
 		BB866CDB2768EE090017F27C /* ColorButtonMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButtonMenuView.swift; sourceTree = "<group>"; };
 		BB968EC6275E602100831BC0 /* FinancialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB968EC9275E602100831BC0 /* FinancialAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialAppApp.swift; sourceTree = "<group>"; };
@@ -77,6 +84,9 @@
 		BB968EE2275E65C100831BC0 /* CustomTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextStyle.swift; sourceTree = "<group>"; };
 		BB968EE5275E662300831BC0 /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
 		BB968EE7275E69F200831BC0 /* PalleteColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalleteColors.swift; sourceTree = "<group>"; };
+		BBAB43EA2774CB24009EE4B5 /* MockAccountPreviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAccountPreviewService.swift; sourceTree = "<group>"; };
+		BBAB43EC2774CE3C009EE4B5 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		BBAB43EE2774D095009EE4B5 /* CardListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListRow.swift; sourceTree = "<group>"; };
 		BBC82180276B914500C4657E /* Card+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+Extension.swift"; sourceTree = "<group>"; };
 		BBC82182276B92C100C4657E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +129,7 @@
 			children = (
 				BB52849F2763A9EE005D1C12 /* TransactionItemView.swift */,
 				BB5284A12763AA8A005D1C12 /* RoundedBackgroundView.swift */,
+				BBAB43EE2774D095009EE4B5 /* CardListRow.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -169,6 +180,7 @@
 				BB968EC9275E602100831BC0 /* FinancialAppApp.swift */,
 				BB5284A32763AEEB005D1C12 /* AccountHomeView.swift */,
 				BB090D1927679AEB0053D2CA /* CreateAccountView.swift */,
+				BBAB43EC2774CE3C009EE4B5 /* AccountListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +210,7 @@
 				BB474A77276A470E000D2A20 /* Account+Extension.swift */,
 				BBC82180276B914500C4657E /* Card+Extension.swift */,
 				BBC82182276B92C100C4657E /* CoreDataManager.swift */,
+				BBAB43EA2774CB24009EE4B5 /* MockAccountPreviewService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +222,8 @@
 				BB3389242761093900F9423C /* ColorExtension.swift */,
 				BB3389262761097C00F9423C /* UIColorExtension.swift */,
 				BB33892827610A2700F9423C /* IntExtension.swift */,
+				BB7CCB8727834EF0009FADEB /* BoolOptional+Extension.swift */,
+				BB7CCB892783504C009FADEB /* StringOptional+Extension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -319,8 +334,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB968EE0275E63E600831BC0 /* HomeHeaderView.swift in Sources */,
+				BB7CCB8827834EF0009FADEB /* BoolOptional+Extension.swift in Sources */,
 				BB07DBF727625A1100BFA861 /* AccountSummaryView.swift in Sources */,
 				BBC82181276B914500C4657E /* Card+Extension.swift in Sources */,
+				BB7CCB8A2783504C009FADEB /* StringOptional+Extension.swift in Sources */,
+				BBAB43ED2774CE3C009EE4B5 /* AccountListView.swift in Sources */,
 				BB5284A22763AA8A005D1C12 /* RoundedBackgroundView.swift in Sources */,
 				BB07DBF52762562600BFA861 /* SubMenuView.swift in Sources */,
 				BB968EE8275E69F200831BC0 /* PalleteColors.swift in Sources */,
@@ -336,12 +354,14 @@
 				BB33892927610A2700F9423C /* IntExtension.swift in Sources */,
 				BB090D232767A1D60053D2CA /* LastNameView.swift in Sources */,
 				BB968ECA275E602100831BC0 /* FinancialAppApp.swift in Sources */,
+				BBAB43EB2774CB24009EE4B5 /* MockAccountPreviewService.swift in Sources */,
 				BB3389252761093900F9423C /* ColorExtension.swift in Sources */,
 				BB090D272767A3580053D2CA /* CreditCardTypeMenuView.swift in Sources */,
 				BB5284A02763A9EE005D1C12 /* TransactionItemView.swift in Sources */,
 				BB090D1A27679AEB0053D2CA /* CreateAccountView.swift in Sources */,
 				BB6ADD67276CE20800EF90AA /* CreateAccountViewModel.swift in Sources */,
 				BB090D1F27679EB30053D2CA /* AccountFormView.swift in Sources */,
+				BBAB43EF2774D095009EE4B5 /* CardListRow.swift in Sources */,
 				BB968EE6275E662300831BC0 /* ScaledFont.swift in Sources */,
 				BB474A76276A4038000D2A20 /* Model.xcdatamodeld in Sources */,
 				BB090D252767A2050053D2CA /* CardLimitView.swift in Sources */,

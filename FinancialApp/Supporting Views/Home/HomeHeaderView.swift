@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct HomeHeaderView: View {
+    @ObservedObject var account: Account
     var body: some View {
         HStack(alignment:.center){
             Image("avatar")
             Spacer()
             VStack(alignment: .leading, spacing: -8){
-                Text("Hi, Tzuzul Code")
+                Text("Hi, \(account.firstName.stringValue)")
                     .customFont(.custom(.bold, 24))
                 Text("Welcome to your favorite app")
                     .customFont(.custom(.demibold, 16))
@@ -25,6 +26,6 @@ struct HomeHeaderView: View {
 
 struct HomeHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeHeaderView().previewLayout(.fixed(width: 600, height: 80))
+        HomeHeaderView(account:MockAccountPreviewService.creditAccount).previewLayout(.fixed(width: 600, height: 80))
     }
 }

@@ -14,7 +14,7 @@ struct ContentView: View {
             CreateAccountView()
             
             if model.hasAccounts(){
-                AccountHomeView()
+                //AccountHomeView()
             }
         }
         

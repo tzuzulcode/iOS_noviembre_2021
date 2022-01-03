@@ -16,11 +16,11 @@ struct AccountHomeView: View {
                 
             ScrollView{
                 VStack{
-                    HomeHeaderView()
-                    CardView()
+                    HomeHeaderView(account:account) // Add account
+                    CardListRow(account: account)
                     SubMenuView()
                     Divider()
-                    AccountSummaryView()
+                    AccountSummaryView(account:account)
                 }
             }
         }
@@ -30,6 +30,6 @@ struct AccountHomeView: View {
 struct AccountHomeView_Previews: PreviewProvider {
     static var previews: some View {
         //Crear un mock
-        AccountHomeView(account:)
+        AccountHomeView(account:MockAccountPreviewService.creditAccount)
     }
 }

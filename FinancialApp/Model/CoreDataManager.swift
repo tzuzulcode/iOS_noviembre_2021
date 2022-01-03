@@ -22,7 +22,7 @@ class CoreDataManager:ObservableObject{
     }
     
     var persistentContainer: NSPersistentContainer={
-        let container = NSPersistentContainer(name: "FinancialApp")
+        let container = NSPersistentContainer(name: "Model")
         container.loadPersistentStores{
             (storeDescription,error) in
             guard error == nil else{

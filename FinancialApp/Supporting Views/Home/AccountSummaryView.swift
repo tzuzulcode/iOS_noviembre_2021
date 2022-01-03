@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct AccountSummaryView: View {
-    private var type = "debitcard"
+    @ObservedObject var account: Account
+    
     var body: some View {
         VStack{
-            if type=="creditcard"{
+            if account.type==AccountType.creditcard.rawValue{
                 creditcard
             }else{
                 debitcard
@@ -26,7 +27,7 @@ struct AccountSummaryView: View {
 
 struct AccountSummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountSummaryView().previewLayout(.fixed(width: 600, height: 310))
+        AccountSummaryView(account: MockAccountPreviewService.creditAccount).previewLayout(.fixed(width: 600, height: 310))
     }
 }
 
