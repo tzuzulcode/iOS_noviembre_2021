@@ -8,11 +8,8 @@
 import SwiftUI
 
 struct CreditCardTypeMenuView: View {
-    let logos = [
-        "mc-logo-selector",
-        "visa-logo-selector",
-        "am-logo-selector"
-    ]
+    
+    @EnvironmentObject var model: CreateAccountViewModel
     var body: some View {
         VStack{
             VStack(alignment: .leading, spacing: 3){
@@ -23,11 +20,20 @@ struct CreditCardTypeMenuView: View {
                 Divider()
             }.padding(.top,15)
             HStack{
-                ForEach(0..<logos.count){index in
-                    Button(action: {}){
+                ForEach(0..<model.selectorLogos.count){index in
+                    Button(action: {
+                        model.selectedCardType = index
+                    }){
                         VStack{
-                            Image(self.logos[index])
-                            Image("checkmark-outline-selector")
+                            Image(self.model.selectorLogos[index])
+                            if(model.selectedCardType==index){
+                                Image("checkmark-selector")
+                            }else{
+                                Image("checkmark-outline-selector")
+                            }
+                            
+                            
+                                
                         }
                     }.buttonStyle(CreditCardStyle())
                 }
@@ -38,6 +44,6 @@ struct CreditCardTypeMenuView: View {
 
 struct CreditCardTypeMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        CreditCardTypeMenuView()
+        CreditCardTypeMenuView().environmentObject(CreateAccountViewModel())
     }
 }

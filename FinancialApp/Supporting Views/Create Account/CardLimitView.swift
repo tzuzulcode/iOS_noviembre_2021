@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct CardLimitView: View {
-    @State var firstName = "Credit Limit"
+    @EnvironmentObject var model: CreateAccountViewModel
     var body: some View {
         VStack{
             HStack(alignment: .center, spacing: 0){
                 Text("Credit Limit")
                     .customFont(.custom(.bold, 14))
                     .foregroundColor(.basePrussianBlue)
-                TextField("Credit Limit",text: $firstName)
+                TextField("Credit Limit",text:Binding(
+                    get: {String(model.creditLimit)},
+                    set: {model.creditLimit = Float($0) ?? 0}
+                ))
                     .multilineTextAlignment(.trailing)
                     .customFont(.custom(.medium, 14))
                     .padding(.trailing,0)
@@ -27,6 +30,6 @@ struct CardLimitView: View {
 
 struct CardLimitView_Previews: PreviewProvider {
     static var previews: some View {
-        CardLimitView()
+        CardLimitView().environmentObject(CreateAccountViewModel())
     }
 }

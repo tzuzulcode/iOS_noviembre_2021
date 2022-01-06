@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct AccountTypeView: View {
+    @EnvironmentObject var model: CreateAccountViewModel
     var body: some View {
         HStack{
-            Button(action:{}){
+            Button(action:{
+                model.selectedAccountType = 1
+            }){
                 HStack{
                     ZStack{
                         Circle()
-                            .fill(Color.basePrussianBlue)
+                            .fill(model.selectedAccountType == 1 ? Color.basePrussianBlue : Color.baseMediumGray)
                             .frame(width:18,height:18)
                         Image("checkmark-selector")
                             .resizable()
@@ -27,11 +30,13 @@ struct AccountTypeView: View {
                         .foregroundColor(.baseDustyGray)
                 }
             }
-            Button(action:{}){
+            Button(action:{
+                model.selectedAccountType = 0
+            }){
                 HStack{
                     ZStack{
                         Circle()
-                            .fill(Color.basePrussianBlue)
+                            .fill(model.selectedAccountType == 0 ? Color.basePrussianBlue : Color.baseMediumGray)
                             .frame(width:18,height:18)
                         Image("checkmark-selector")
                             .resizable()
@@ -50,6 +55,6 @@ struct AccountTypeView: View {
 
 struct AccountTypeView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountTypeView()
+        AccountTypeView().environmentObject(CreateAccountViewModel())
     }
 }

@@ -16,6 +16,9 @@ struct AccountListView: View {
     let model = CreateAccountViewModel()
     
     init(){
+        //UITableView.appearance().separatorStyle = .none
+        UITableView.appearance().backgroundColor = .clear
+        UITableViewCell.appearance().backgroundColor = .clear
         
     }
     
@@ -27,10 +30,21 @@ struct AccountListView: View {
                     ForEach(accounts){ account in
                         NavigationLink(destination: AccountHomeView(account: account)) {
                             CardListRow(account: account)
-                        }
+                        }.padding(.vertical, 10)
                     }
                 }
             }
+            .navigationTitle("Accounts")
+            .sheet(isPresented: $showCreateAccountScreen){
+                CreateAccountView().environmentObject(self.model)
+            }
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                self.showCreateAccountScreen.toggle()
+            }){
+                Text("New Account")
+            }
+            )
         }
     }
 }
@@ -38,5 +52,6 @@ struct AccountListView: View {
 struct AccountListView_Previews: PreviewProvider {
     static var previews: some View {
         AccountListView()
+            .environment(\.managedObjectContext, MockAccountPreviewService.moc)
     }
 }

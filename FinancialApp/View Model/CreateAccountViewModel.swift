@@ -35,12 +35,12 @@ class CreateAccountViewModel:ObservableObject{
     @Published var selectedCardColor: UIColor = .basePrussianBlue
     
     var creditLimit: Float = 0.0
-    var selectorLogos = ["mc-logo-selector", "visa-logo-selector", "am-logo-selector"]
-    var cardLogos = ["mc-logo-selector", "visa-logo", "am-logo"]
+    @Published var selectorLogos = ["mc-logo-selector", "visa-logo-selector", "am-logo-selector"]
+    @Published var cardLogos = ["mc-logo-selector", "visa-logo", "am-logo"]
     
     var accountTypes:[String] = [AccountType.debitcard.rawValue,AccountType.creditcard.rawValue]
     
-    var colors: [Color] = [.baseEndeavourBlue,
+    @Published var colors: [Color] = [.baseEndeavourBlue,
                            .baseHokiBlue,
                            .black,
                            .red,
@@ -58,7 +58,19 @@ class CreateAccountViewModel:ObservableObject{
     
     //Methodos
     func createAccount(){
+        /*let request : NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Account")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: request)
+        do{
+            try CoreDataManager.shared.context.execute(deleteRequest)
+        }catch let error as NSError{
+            print(error)
+        }
+         */
+        print("Creando cuenta view model")
         let currentAccount = Account(context: CoreDataManager.shared.context)
+        print("cuenta sin datos")
+        print(currentAccount)
+        
         CoreDataManager.shared.context.perform {
             let accountNo = UUID().uuidString.suffix(6)
             //UUID: 123e4567-e89b-12d3-a456-426652340000
@@ -100,6 +112,9 @@ class CreateAccountViewModel:ObservableObject{
 
             currentAccount.card = currentCard // (4)
             
+            print("Cuenta con datos")
+            print(currentAccount)
+            
             CoreDataManager.shared.save()
         }
         
@@ -113,7 +128,11 @@ class CreateAccountViewModel:ObservableObject{
             for data in try CoreDataManager.shared.context.fetch(request){
                 accounts.append(data)
             }
-            if(accounts.count>0){return true}
+            if(accounts.count>0){
+                print("Tenemos cuentas...")
+                return true
+                
+            }
             return false
         }catch let error as NSError{
             if error.code == 0,error.domain == "Foundation._GenericObjCError"{

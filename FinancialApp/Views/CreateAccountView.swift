@@ -30,6 +30,7 @@ struct CreateAccountView: View {
     }
     
     func onCreateTapped(){
+        print("Creando cuenta...")
         model.createAccount()
     }
 }

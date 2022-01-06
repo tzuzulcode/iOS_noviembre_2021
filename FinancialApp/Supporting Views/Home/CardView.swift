@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
+    @EnvironmentObject var model: CreateAccountViewModel
     var body: some View {
         ZStack{
             HStack(spacing:-116){
@@ -30,7 +31,7 @@ struct CardView: View {
                         
                     }.foregroundColor(.white)
                     Spacer()
-                    Image("visa-logo")
+                    Image(self.model.selectorLogos[model.selectedCardType])
                 }.padding(.horizontal,20)
                 HStack { // Step 1
 
@@ -106,5 +107,6 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView().previewLayout(.fixed(width: 300, height: 180))
+            .environmentObject(CreateAccountViewModel())
     }
 }

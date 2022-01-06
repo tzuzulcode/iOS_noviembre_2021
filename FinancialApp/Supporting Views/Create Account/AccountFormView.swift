@@ -8,11 +8,8 @@
 import SwiftUI
 
 struct AccountFormView: View {
-    @State var firstName = "First Name"
-    @State var lastName = "Last Name"
-    @State var creditLimit = "Credit Limit"
 
-    private let type = "creditcard"
+    @EnvironmentObject var model: CreateAccountViewModel
     
     init() {
         UITableView.appearance().backgroundColor = UIColor.baseWhite
@@ -28,7 +25,7 @@ struct AccountFormView: View {
                 FirstNameView()
                 LastNameView()
                 
-                if type == "creditcard" { // Step 3
+                if model.selectedAccountType == 1 { // Step 3
                     CardLimitView()
                 }
             }

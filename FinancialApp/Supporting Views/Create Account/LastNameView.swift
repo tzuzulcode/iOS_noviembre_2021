@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct LastNameView: View {
-    @State var firstName = "Last Name"
+    @EnvironmentObject var model: CreateAccountViewModel
     var body: some View {
         VStack{
             HStack(alignment: .center, spacing: 0){
                 Text("Last Name")
                     .customFont(.custom(.bold, 14))
                     .foregroundColor(.basePrussianBlue)
-                TextField("Last Name",text: $firstName)
+                TextField("Last Name",text: $model.firstName)
                     .multilineTextAlignment(.trailing)
                     .customFont(.custom(.medium, 14))
                     .padding(.trailing,0)
@@ -27,6 +27,6 @@ struct LastNameView: View {
 
 struct LastNameView_Previews: PreviewProvider {
     static var previews: some View {
-        LastNameView()
+        LastNameView().environmentObject(CreateAccountViewModel())
     }
 }
