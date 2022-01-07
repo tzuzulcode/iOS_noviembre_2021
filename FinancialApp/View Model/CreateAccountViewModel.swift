@@ -40,13 +40,14 @@ class CreateAccountViewModel:ObservableObject{
     
     var accountTypes:[String] = [AccountType.debitcard.rawValue,AccountType.creditcard.rawValue]
     
-    @Published var colors: [Color] = [.baseEndeavourBlue,
-                           .baseHokiBlue,
-                           .black,
-                           .red,
-                           .pink,
-                           .purple,
-                           .gray]
+    @Published var colors: [UIColor] = [.baseEndeavourBlue,
+                                       .baseHokiBlue,
+                                       .black,
+                                       .red,
+                                      .green,
+                                       .orange,
+                                       .purple,
+                                       .gray]
              
      var uiColors: [UIColor] = [.baseEndeavourBlue,
                               .baseHokiBlue,

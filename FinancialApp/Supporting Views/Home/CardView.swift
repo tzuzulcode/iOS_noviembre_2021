@@ -14,10 +14,10 @@ struct CardView: View {
             HStack(spacing:-116){
                 Image("left-card")
                     .renderingMode(.template)
-                    .foregroundColor(.basePrussianBlue)
+                    .foregroundColor(Color(model.selectedCardColor))
                 Image("right-card")
                     .renderingMode(.template)
-                    .foregroundColor(.basePrussianBlue)
+                    .foregroundColor(Color(model.selectedCardColor))
                     .opacity(0.95)
             }
             VStack{
